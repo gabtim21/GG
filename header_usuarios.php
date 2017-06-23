@@ -95,14 +95,6 @@ require_once("funciones.php");
                             </li>
                         </ul>
                     </li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Operaciones <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                           <li>
-                                <a href="game.php">Game</a>
-                            </li>
-                        </ul>
-                    </li>
                     <li>
                         <a href="contact.php">Contactenos</a>
                     </li>
@@ -110,14 +102,10 @@ require_once("funciones.php");
                         <a href="javascript:;" class="nav-link dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> <?php echo $_SESSION["uname"]; ?> <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             <li class="dropdown-item">
-                                <a href="javascript:;"><i class="fa fa-fw fa-user"></i>Perfil</a>
+                                <a href="javascript:;"><i class="fa fa-fw fa-user"></i>Profile</a>
                             </li>
-                            <li class="dropdown-item col-lg-12">
-                                <div class="form-group input-group ">
-                                    <form method="post" action="">
-                                        <input type="submit" class="form-control btn btn-info" name="logout" value="Cerrar Sesión!">
-                                    </form> 
-                                </div>
+                            <li class="dropdown-item">
+                                <input type="submit" name="logout" value="Cerrar Sesión">     
                             </li> 
                         </ul>
                     </li>

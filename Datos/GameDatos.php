@@ -1,11 +1,10 @@
 <?php 
+require_once("Modelos/Game.php");
+require_once("conection.php");
 
-require_once("Modelos/Usuario.php");
-require_once("funciones.php");
+class GameDatos{
 
-class UsuarioDatos{
-
-function getUsuarioById($id){
+	function getGameById($id){
 
 		$db=conexion();
         $game=new Game();
@@ -68,6 +67,23 @@ function getUsuarioById($id){
         $query = array('_id' => $xid_game);
         $db->game->remove($query);
     }
+    /*function obtenerId($categorias){
+        $temp=0;
+                 foreach($categorias as $categoria){
+                    $ultimo=($categoria->id_cat)*1;
+                                if($ultimo<2){
+                                    $temp=2;
+                                }else{                                            
+                                    if($temp<$ultimo){
+                                            $temp=$ultimo;
+                                            }
+                                    }
+
+                             }
+        $temp++;
+       return $temp;
+    }*/
+
 }
 
  ?>

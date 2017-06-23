@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -32,7 +30,7 @@
              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a href="signup.html">Registrate</a>
+                        <a href="signup.php">Registrate</a>
                     </li>
                 </ul>
             </div>
@@ -70,15 +68,15 @@
                             </div>
 
                             <div class="form-bottom">
-                          <form role="form" action="validar.php" method="post" class="login-form">
+                          <form role="form" action="login_action.php" method="post" class="login-form">
 
                             <div class="form-group">
-                              <label class="sr-only" for="inputUser">Username</label>
-                                <input type="text" name="inputUser" placeholder="Username..." class="inputUser form-control" id="inputUser">
+                              <label class="sr-only" for="inputEmail">Email</label>
+                                <input type="text" name="inputEmail" placeholder="Email..." class=" form-control" id="inputEmail" autocomplete="off">
                               </div>
                               <div class="form-group">
-                                <label class="sr-only" for="inputpassword">Password</label>
-                                <input type="password" name="inputpassword" placeholder="Password..." class="inputpassword form-control" id="inputpassword">
+                                <label class="sr-only" for="inputPassword">Password</label>
+                                <input type="password" name="inputPassword" placeholder="Password..." class=" form-control" id="inputPassword" autocomplete="off">
                               </div>
                               <button type="submit" class="btn">Ingresar</button>
                           </form>
@@ -121,3 +119,5 @@
     </body>
 
 </html>
+
+
